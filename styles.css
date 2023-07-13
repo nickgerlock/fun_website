@@ -3,8 +3,7 @@ body {
   font-size: medium;
 }
 
-#header {
-  opacity: 0;
+#header:not(.transparent) {
   -webkit-transition: opacity 2s ease-in;
      -moz-transition: opacity 2s ease-in;
       -ms-transition: opacity 2s ease-in;
@@ -12,8 +11,11 @@ body {
           transition: opacity 2s ease-in;
 }
 
-#content {
+.transparent {
   opacity: 0;
+}
+
+#content {
 }
 
 #container {

@@ -5,15 +5,14 @@ darkMode.addEventListener('click', function(e) {
   darkMode.style.display = 'none';
 });
 
-const header = document.getElementById('header');
-const content = document.getElementById('content');
-header.style.opacity = 0;
-content.style.opacity = 0;
 
-setTimeout(() => {
-  header.style.opacity = 1;
-}, 100);
-
-setTimeout(() => {
-  content.style.opacity = 1;
-}, 2000)
+window.onload = () => {
+console.log("crazy pills 2")
+  const header = document.getElementById('header');
+  const content = document.getElementById('content');
+  header.classList.remove('transparent');
+  
+  setTimeout(() => {
+    content.classList.remove('transparent');
+  }, 2000)
+}
