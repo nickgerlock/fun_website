@@ -1,4 +1,9 @@
-.header {
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: medium;
+}
+
+#header {
   opacity: 0;
   -webkit-transition: opacity 2s ease-in;
      -moz-transition: opacity 2s ease-in;
@@ -7,36 +12,31 @@
           transition: opacity 2s ease-in;
 }
 
-.content {
+#content {
   opacity: 0;
 }
 
-.container {
+#container {
   margin: auto;
   margin-top: 5em;
   width: 400px
-}
-
-body {
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: medium;
 }
 
 .darkZone {
   display: none;
 }
 
-/* here the rules for small windows */
-@media (max-width: 500px) { 
-  .container {
-    width: 80%;
-  }
-}
-
 @media (min-width: 500px) { 
   .container {
+    margin-top: 5em;
     width: 600px;
   }
 }
 
+@media (max-width: 500px) { 
+  .container {
+    margin-top: 2em;
+    width: 80%;
+  }
+}
 

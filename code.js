@@ -6,9 +6,14 @@ darkMode.addEventListener('click', function(e) {
 });
 
 const header = document.getElementById('header');
-header.style.opacity = 1;
+const content = document.getElementById('content');
+header.style.opacity = 0;
+content.style.opacity = 0;
 
 setTimeout(() => {
-  const content = document.getElementById('content');
+  header.style.opacity = 1;
+}, 100);
+
+setTimeout(() => {
   content.style.opacity = 1;
 }, 2000)
