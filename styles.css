@@ -1,6 +1,7 @@
 body {
   font-family: Arial,Helvetica,sans-serif;
   font-size: medium;
+  margin: 0px;
 }
 
 #header:not(.transparent) {
@@ -18,9 +19,17 @@ body {
 #content {
 }
 
+#background {
+  background-image: url('bgpastelstreaks.gif');
+  height: 100%;
+}
+
 #container {
   margin: auto;
-  width: 400px
+  height: 80%;
+  background-color: white;
+  border: 4px outset grey;
+  padding: 2%;
 }
 
 .darkZone {
@@ -29,15 +38,19 @@ body {
 
 @media (min-width: 500px) { 
   #container {
-    margin-top: 5em;
-    width: 600px;
+    width: 700px;
+  }
+  #background {
+    padding: 4rem 2rem 0rem 2rem;
   }
 }
 
 @media (max-width: 500px) { 
   #container {
-    margin-top: 2em;
-    width: 80%;
+    width: 90%;
+  }
+  #background {
+    padding: 2rem 2rem 0rem 2rem;
   }
 }
 
